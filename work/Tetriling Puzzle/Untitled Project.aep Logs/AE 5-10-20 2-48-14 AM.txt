@@ -1,0 +1,8 @@
+  5/10/20 2:48:14 AM: Starting composition “Comp 1”.
+
+  Output To: C:\Users\jonat\Desktop\stuff\Site\work\Tetriling Puzzle\Comp 1.mov    5/10/20 2:48:19 AM: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 5 Seconds
+Log closed on 5/10/20 at 2:48:19 AM
+
