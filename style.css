@@ -280,7 +280,7 @@ section {
     /* background-color: rgb(185, 185, 185); */
     /* background-blend-mode: overlay; */
     color: var(--font_col_2);
-    text-shadow: 0px 2px 50px var(--font_col_1);
+    text-shadow: 0px 2px 50% var(--font_col_1);
     font-weight: 600;
 }
 #collapsebtn1:hover {
@@ -317,7 +317,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--font_col_1);
-    text-shadow: 0px 2px 50px var(--font_col_2);
+    text-shadow: 0px 2px 50% var(--font_col_2);
     font-weight: 550;
 }
 #collapsebtn2:hover {
@@ -349,7 +349,7 @@ section {
     background-repeat: no-repeat;
     background-size: contain;
     color: var(--font_col_1);
-    /* text-shadow: 0px 2px 50px var(--font_col_1); */
+    /* text-shadow: 0px 2px 50% var(--font_col_1); */
 }
 #collapsebtn3:hover {
     background-image: url(work/actuallytransparent.png);
@@ -390,7 +390,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--font_col_2);
-    text-shadow: 0px 2px 50px var(--font_col_1);
+    text-shadow: 0px 2px 50% var(--font_col_1);
 }
 /* #collapsebtn6:hover {
     background-image: url(work/actuallytransparent.png);
@@ -403,7 +403,7 @@ section {
 #collapsebtn6 .collapsetext {
     color: var(--font_col_2);
     font-weight: 550;
-    text-shadow: 0px 2px 10px var(--font_col_1);
+    text-shadow: 0px 2px 10% var(--font_col_1);
 }
 #collapsebtn6 input:checked ~ #collapseitems6 {
     visibility: initial;
