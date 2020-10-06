@@ -358,6 +358,9 @@ section {
 #tetrbtn:hover input:checked ~ #tetritems {
     background-color: var(--hov_col);
 }
+#tetrtext {
+    display: block;
+}
 #tetrfigbox {
     display: flex;
     flex-direction: row;
