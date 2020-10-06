@@ -277,7 +277,7 @@ section {
 .collapsetext p {
     padding: 0px 3%;
 }
-#collapsebtn1 {
+#explorebtn {
     /* background-image: url(work/EDP/finalpackagingdisplay.png); */
     background-image: url(work/EDP/cane.gif);
     background-position: bottom;
@@ -289,21 +289,21 @@ section {
     text-shadow: 0px 2px 50% var(--font_col_1);
     font-weight: 600;
 }
-#collapsebtn1:hover {
+#explorebtn:hover {
     /* background-image: url(work/EDP/cane.gif); */
     /* background-color: var(--font_col_2); */
     /* background-image: url(work/actuallytransparent.png);
     background-color: var(--color_1); */
 }
-/* #collapsebtn1 input:checked ~ h2,
-#collapsebtn1 input:checked ~ #collapseitems1 {
+/* #explorebtn input:checked ~ h2,
+#explorebtn input:checked ~ #exploreitems {
     color: var(--font_col_2);
 }
-#collapsebtn1:hover input:checked ~ h2,
-#collapsebtn1:hover input:checked ~ #collapseitems1 {
+#explorebtn:hover input:checked ~ h2,
+#explorebtn:hover input:checked ~ #exploreitems {
     color: var(--font_col_1);
 } */
-#collapsebtn1 input:checked ~ #collapseitems1 {
+#explorebtn input:checked ~ #exploreitems {
     visibility: initial;
     display: flex;
     height: initial;
@@ -322,7 +322,7 @@ section {
     padding: 10px 5%;
     border-radius: 5px;
 }
-#collapsebtn2 {
+#tetrbtn {
     background-image: url(work/Tetriling\ Puzzle/Comp\ 1.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -331,12 +331,12 @@ section {
     text-shadow: 0px 2px 50% var(--font_col_2);
     font-weight: 550;
 }
-#collapsebtn2:hover {
+#tetrbtn:hover {
     /* background-image: url(work/transparent.png); */
     background-image: none;
     background-size: cover;
 }
-#collapsebtn2 input:checked ~ #collapseitems2 {
+#tetrbtn input:checked ~ #tetritems {
     visibility: initial;
     display: flex;
     height: initial;
