@@ -189,7 +189,7 @@ section {
     justify-content: space-between;
 }
 .content p {
-    padding: 0px 30px;
+    padding: 0px 3%;
 }
 .disclaimer {
     font-style: italic;
@@ -429,16 +429,26 @@ section {
     height: initial;
 }
 .contactinfo {
-    padding: 0px 20px;
-    margin: 0px;
-    display: block;
+    /* padding: 0px 20px; */
+    margin: 0px 3%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
-.contactinfo p {
+.contactinfo input {
+    width: 100%;
+    min-height: 20px;
+}
+.contactinfo #message {
+    min-height: 100px;
+}
+/* .contactinfo p {
     display: inline-block;
     padding: 0px 30px;
     margin: 10px;
     white-space: nowrap;
-}
+} */
 .footer {
     padding: 0px 50px;
     margin-top: 50px;
