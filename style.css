@@ -339,12 +339,14 @@ section {
 #tetrtext {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 30%;
 }
 #tetrfigtext {
-    width: 60%;
+    /* width: 60%; */
 }
 #tetrfig1 {
-    width: 30%;
+    min-width: 30%;
+    max-width: 96%;
     margin-left: 2%;
     border-radius: 5px;
 }
