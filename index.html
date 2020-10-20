@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jonathan Tang - Home</title>
+        <title>Jonathan Tang</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
     </head>
@@ -20,9 +20,9 @@
                         </svg>
                     </button>
                     <ul class="navitems">
-                        <li><a href="index.html" class="btn">Home</a></li>
-                        <li><a href="work.html" class="btn">Work</a></li>
                         <li><a href="about.html" class="btn">About</a></li>
+                        <li><a href="work.html" class="btn">Work</a></li>
+                        <li><a href="contact" class="btn">Contact</a></li>
                         <li><a href="cv.html" class="btn">CV</a></li>
                     </ul>
                 </nav>
@@ -30,9 +30,221 @@
         </header>
         <section>
             <div class="container">
-                <div class="content">
-                    <p>This is the home page!</p>
+                <div class="content" id="about">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Jonathan, but I also go by Jon. <br><br>
+                        I am a 3rd Year Design Engineering student at Imperial College London who is fascinated in the art and work that goes into the things we interact with every day. <br><br>
+                        I love music, volleyball, and most things with moving parts! <br><br>
+                        This website was coded from scratch using html and css, and hosted on github pages. <br><br>
+                        Check out some of my work below!                    
+                    </p>  
+                    <!-- and I like to think of myself as someone who appreciates the art or the skill that goes into these things. -->
                 </div>
+            </div>
+            <div class="container">
+                <div class="content" id="workcontent">
+                    <div class="collapsible" id="explore">
+                        <label class="collapsebtn" id="explorebtn">
+                            <input type="checkbox"/>
+                            <h2>Connect: Explore</h2>
+                            <!-- <h4>Product & Systems Design</h4> -->
+                            <div class="collapseitems" id="exploreitems">
+                                <div class="collapsetext">
+                                    <iframe class="youtube" allowfullscreen="true" src="https://www.youtube.com/embed/BGxrWEJgCog"></iframe>
+                                    <p class="disclaimer">*The background animation was created by Oscar Jones.</p>
+                                    <p class="disclaimer">*DISCLAIMER Google was not involved with the project in any way, and any use of the Google brand is for academic purposes only.</p>
+                                    <!-- <img src="/work/EDP/finalpackagingdisplay.png" class="image" id="explorepack"/> -->
+                                    <h3>What is Explore?</h3>
+                                    <p>
+                                        Explore is a device and system to create an independent museum experience for blind visitors, designed by Oscar Jones, Anais Engelmann, Kanya Thavanesan, and Jonathan Tang.
+                                    </p>
+                                    <h3>The Project</h3>
+                                    <p>
+                                        This project's focal point was designing a hand-held and battery powered tool that not only serves the mass market but also serves the needs of an underserved group. 
+                                    </p>
+                                    <!-- <h3>The Underserved Group</h3>
+                                    <p>
+                                        Initially unsure of where to begin, we started researching a rather broad underserved group - anyone with difficulty communicating. 
+                                        This meant we began looking into issues that foreign language speakers/readers would have, issues regarding the deaf, and finally the blind.
+                                        After coming across multiple blind youtubers, as well as discovering the RNIB in the UK and other VI groups, our focus shifted to understanding the needs of the visually impaired.
+                                    </p>
+                                    <h3>Molly Burke</h3>
+                                    <p>
+                                        We read up on the values and goals of organisations working with the visually impaired (Orcam, Vision Foundation, RNIB), and watched some of <a href="https://www.youtube.com/channel/UCwf9TcLyS5KDoLRLjke41Hg">Molly Burke</a>'s videos to understand more about life as a blind person.
+                                        From Molly specifically, we learned that navigation in larger areas (a cruise ship, shopping center etc.) was not a big issue with the use of her guide dog. 
+                                        However, we observed that in smaller shops and some restaurants where dogs can't be taken and items are more specifically placed, she struggled to navigate more.
+                                    </p>
+                                    <h3>Retail Store</h3>
+                                    <p>
+                                        With this insight, we spoke with a local shop owner about visually impaired customers.
+                                        We learned that a new VI customer would not know the layout of the shop and struggle to navigate it, and that not all VI customers respond well to offered assistance.
+                                    </p> -->
+                                    <h3>Dr. Mona Minkara</h3>
+                                    <p>
+                                        <a href="https://monaminkara.com">Dr. Mona Minkara</a> is blind, and also a professor of Bioengineering at Northeastern University in Massechusetts.
+                                        With <a href="https://www.youtube.com/channel/UCUAGEcdoYLOD7x5hTDKmVoA">Planes Trains and Canes</a>, she documents her experiences solo-travelling as a blind person to share the day to day issues visually impaired (VI) people face.</br></br>
+                                        We met with Mona over skype twice over the course of this project, and kept in touch via email throughout our design process.
+                                    </p>
+                                    <h3>An Exclusive Society</h3>
+                                    <p>
+                                        During our research we found that most things just inherently aren't designed for a visually impaired person.
+                                        Many everyday objects require or are heavily reliant on visual cues to function, and the current solution - make products specifically for the blind.
+                                        However, these products are very expensive and don't solve the inherent issue of non-inclusive design.
+                                    </p>
+                                    <h3>VI Independence</h3>
+                                    <p>
+                                        Currently, under the Equality Act 2010 things such as company policies and shop layouts should accommodate a disabled person, and in the case of a VI person, information should be available in accessible formats such as braille, large print, or email.<a href="https://www.rnib.org.uk/services-we-offer-advice-professionals/equality-act-compliance" style="font-size: 10px;">1</a> </br></br>
+                                        This is all good, but from watching <a href="https://www.youtube.com/channel/UCwf9TcLyS5KDoLRLjke41Hg">Molly Burke</a> and Mona's documentaries, we found that VI users still required assistance from employees to navigate or to find specific items.
+                                        In a voice chat with Mona, she told us she preferred grocery shopping online, because otherwise she would need to phone ahead and make sure someone was available to assist her.
+                                    </p>
+                                    <h3>Tactile Paving</h3>
+                                    <p>
+                                        We found that public transit areas in places like Hong Kong, Singapore and Japan use tactile paving and audio cues to help VI persons navigate independently.
+                                        However, many other indoor locations do not. 
+                                        To find out why, we spoke with <a href="https://www.wongouyang.com/the-team/subheader/danny-t-y-tang/">Danny Tang</a>, who said limitations of indoor tactile strips include aesthetic undesirability for designers and building owners, they often follow unintuitive pathways, and can be tripping hazards to the ambulatory impaired.</br>
+                                        As well as these things, we found that cafes or restaurants and places like museums and galleries with ever-changing layouts would struggle to adopt a permanent solution like tactile paving.
+                                    </p>
+                                    <h3>Explore</h3>
+                                    <p>
+                                        In order to combat the problems we discovered during our research, we came up with a 3 part system. </br></br>
+                                        This system is marketed to museums (and possibly expanding to other indoor locations), and helps museums create a fluid independent experience for VI visitors outside of special VI tours.
+                                        <ul>
+                                            <li>
+                                                BLE (bluetooth low energy) Beacons are placed throughout the museum for indoor positioning information that is fed to the visitor's smartphone. 
+                                            </li>
+                                            <li>
+                                                Upon entry, the VI visitor is given a two-part cane attachment that pairs with the smartphone and detects our "invisible tactile paving" that is laid out in the museum.
+                                            </li>
+                                            <li>
+                                                The "invisible tactile paving" is easy to place down and easy to remove for the museum for quick layout changes.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <!-- <p>
+                                        In summary, the problem with current designs for the visually impaired are:
+                                        <ul>
+                                            <li>Exclusive Design (lack of infrastructural design to support VI users)</li>
+                                            <li>Lack of Independence for VI users</li>
+                                            <li>Permanence of Infrastructural Solutions (tactile paving)</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        In order to combat these problems, we came up with Explore.</br>
+                                        Explore is a systemic product designed for museums (hopefully expanding to other indoor locations), and has 4 main components:
+                                        <ul>
+                                            <li>Bluetooth Low Energy (BLE) Beacons for indoor positioning information</li>
+                                            <li>The VI User's Smartphone</li>
+                                            <li>Museum Owned Cane Attachment (Explore)</li>
+                                            <li>Invisible Tactile Strip (metal wire strip under transparent tape)</li>
+                                        </ul>
+                                    </p> -->
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="collapsible" id="tetr">
+                        <label class="collapsebtn" id="tetrbtn">
+                            <input type="checkbox"/>
+                            <h2>Tetriling Puzzle</h2>
+                            <!-- <h4>Algorithm Design</h4> -->
+                            <div class="collapseitems" id="tetritems">
+                                <div class="collapsetext" id="tetrtext">
+                                    <h3>The Project</h3>
+                                    <p>
+                                        The project was to design an algorithm that would fill as much of a generated polyomino region as fast as possible using tetris pieces. <br>
+                                        The possible pieces (as seen in figure 1) used to generate the region are the same as the possible pieces to solve the puzzle.
+                                    </p>
+                                    <div id="tetrfigbox">
+                                        <img src="work/Tetriling Puzzle/figure1.png" class="image" id="tetrfig1"/>
+                                        <div class="tetrfigtext">
+                                            <h3>Corner Pieces</h3>
+                                            <p>
+                                                Like a regular puzzle, the best place to start is probably at a corner, where there are the fewest possible fitting pieces. <br>
+                                                The main take away from the puzzle analogy is the fewest possible pieces, and in the case of the polyomino shape, this means finding the tile with the fewest neighbouring pieces.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="collapsible" id="collapse3">
+                        <label class="collapsebtn" id="collapsebtn3">
+                            <input type="checkbox"/>
+                            <h2>Green Square</h2>
+                            <!-- <h4>Systems Design and 2D Graphics</h4> -->
+                            <div class="collapseitems" id="collapseitems3">
+                                <video controls>
+                                    <source src="work/Green Square/final_1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </label>
+                    </div>
+                    <!-- <div class="collapsible" id="collapse4">
+                        <label class="collapsebtn" id="collapsebtn4">
+                            <input type="checkbox"/>
+                            <h2>Technical Lego Brick</h2>
+                            <div class="collapseitems" id="collapseitems4">
+                                <p>lorem ipsum or something</p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="collapsible" id="collapse5">
+                        <label class="collapsebtn" id="collapsebtn5">
+                            <input type="checkbox"/>
+                            <h2>3D Printing</h2>
+                            <div class="collapseitems" id="collapseitems5">
+                                <p>lorem ipsum or something</p>
+                            </div>
+                        </label>
+                    </div> -->
+                    <div class="collapsible" id="collapse6">
+                        <label class="collapsebtn" id="collapsebtn6">
+                            <input type="checkbox"/>
+                            <h2>Clay Baby Groot</h2>
+                            <!-- <h4>Sculpting</h4> -->
+                            <div class="collapseitems" id="collapseitems6">
+                                <img src="work/actuallytransparent.png"/>
+                                <div class="collapsetext">
+                                    <p>
+                                        This is a water-based clay sculpture of baby Groot from <a href="https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_Vol._2" style="color: blue;">Guardians of the Galaxy Vol. 2</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="collapsible" id="collapse7">
+                        <label class="collapsebtn" id="collapsebtn7">
+                            <input type="checkbox"/>
+                            <h2>Mash Blender</h2>
+                            <div class="collapseitems" id="collapseitems7">
+                                <p>lorem ipsum or something</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Contact Me:</h3>
+                <form class="contactinfo">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message"><br>
+                </form>
+                <!-- <p>Email: </br>
+                    jonjjt2000@gmail.com</p>
+                <p>Phone / Whatsapp: </br>
+                    +44 7365916933</p> -->
+                    <!-- put icons for socials -->
+                <!-- <p><a href=#>Linkden</a></p>
+                <p><a href=#>Youtube</a></p> -->
             </div>
         </section>
     </body>

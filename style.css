@@ -8,10 +8,10 @@
     /* secondary colour */
     /* --color_2: rgb(20, 20, 30); */
     /* alt sec */
-    --color_2: rgb(200, 200, 255)
+    --color_2: rgb(250, 250, 255);
     /* hover colour */
-    --hov_col: rgb(68, 68, 68);
-    /* --hov_col: rgb(230, 230, 230); */
+    /* --hov_col: rgb(68, 68, 68); */
+    --hov_col: rgb(230, 230, 230);
     /* active colour */
     --act_col: rgb(61, 61, 61);
     /* font colours */
@@ -137,7 +137,7 @@ nav {
         background-color: var(--act_col);
     }
     nav:focus-within > .navitems {
-        height: 200px;
+        height: 190px;
         visibility: visible;
     }
     nav:focus-within > .navitems li:nth-child(1) {
@@ -156,6 +156,10 @@ nav {
         opacity: 100%;
         transition: opacity var(--db_appear) ease-out 0.52s;
     }
+    /* nav:focus-within > .navitems li:nth-child(5) {
+        opacity: 100%;
+        transition: opacity var(--db_appear) ease-out 0.7s;
+    } */
     .container {
         width: 95vw;
     }
@@ -180,6 +184,7 @@ section {
     margin: 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     height: 100%;
 }
 .container {
