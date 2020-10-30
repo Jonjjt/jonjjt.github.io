@@ -253,13 +253,6 @@ section {
     transition: 500ms ease-out;
     font-weight: 800;
 }
-.collapsebtn h4 {
-    text-align: center;
-    margin-top: 30px;
-    opacity: 0%;
-    margin: 0px;
-    transition: 500ms ease-out;
-}
 .collapsebtn a {
     text-decoration: none;
     color: var(--font_col_1);
@@ -272,12 +265,10 @@ section {
     cursor: pointer;
     background-color: var(--hov_col);
 }
-.collapsebtn:hover > h2,
-.collapsebtn:hover > h4 {
+.collapsebtn:hover > h2 {
     opacity: 100%;
 }
-.collapsebtn input:checked ~ h2,
-.collapsebtn input:checked ~ h4 {
+.collapsebtn input:checked ~ h2 {
     opacity: 100%;
 }
 .collapsebtn:active {
@@ -312,6 +303,11 @@ section {
     padding: 0px 3%;
     margin: 5px;
     font-size: 20px;
+}
+.collapsetext h4 {
+    padding: 0px 3%;
+    margin: 5px;
+    font-size: 17px;
 }
 .collapsetext p {
     padding: 0px 3%;
@@ -358,6 +354,144 @@ section {
     border-radius: 5px;
     align-self: center;
 }
+#monabtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#monabtn:hover {
+    background-image: url(work/transparent.png);
+}
+#monaitems {
+    padding: 0px;
+    margin: 0px;
+}
+#monaitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#monabtn input:checked ~ #monaitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#exsocbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#exsocbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#exsocitems {
+    padding: 0px;
+    margin: 0px;
+}
+#exsocitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#exsocbtn input:checked ~ #exsocitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#viibtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#viibtn:hover {
+    background-image: url(work/transparent.png);
+}
+#viiitems {
+    padding: 0px;
+    margin: 0px;
+}
+#viiitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#viibtn input:checked ~ #viiitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#tpbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#tpbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#tpitems {
+    padding: 0px;
+    margin: 0px;
+}
+#tpitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#tpbtn input:checked ~ #tpitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#expbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#expbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#expitems {
+    padding: 0px;
+    margin: 0px;
+}
+#expitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#expbtn input:checked ~ #expitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#mwexpbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#mwexpbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#mwexpitems {
+    padding: 0px;
+    margin: 0px;
+}
+#mwexpitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#mwexpbtn input:checked ~ #mwexpitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
 #explorepack {
     max-width: 75%;
     padding: 10px 5%;
@@ -379,7 +513,7 @@ section {
 }
 #tetrbtn input:checked ~ #tetritems {
     /* background-image: url(work/transparent.png); */
-    /* background-color: var(--color_1); */
+    background-color: var(--color_1);
     visibility: initial;
     display: flex;
     height: initial;
