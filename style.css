@@ -29,6 +29,9 @@ html, body {
     margin: 0;
     height: 100%;
 }
+h1, h2, h3, h4, h5 {
+    font-family: "Roboto", sans-serif;
+}
 header {
     height: 80px;
     top: 0;
@@ -46,17 +49,25 @@ header {
     justify-content: center;
 }
 .navbar {
-    width: 80vw;
+    width: 90vw;
+    /* padding-top: 20px; */
+    /* background: blue; */
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     user-select: none;
 }
 #title {
     display: inline;
+    justify-self: center;
+}
+#navlogo {
+    height: 50px;
 }
 nav {
     display: inline;
+    justify;
 }
 .dropbtn {
     display: none;
@@ -189,19 +200,46 @@ section {
 }
 .container {
     /* max-width: 1000px; */
-    width: 80vw;
+    width: 90vw;
     padding: 0px 20px;
-    margin: 0px;
+    margin: 0px 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 .content {
-    width: 80%;
+    width: 100%;
     align-self: center;
     padding: 0px;
     margin: 0px;
     display: block;
+}
+#about {
+    /* background-color: var(--color_1); */
+    margin-bottom: 0px;
+}
+#aboutcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5% 2%;
+}
+#about h2 {
+    padding: 0px 2%;
+}
+#about img {
+    height: 30vw;
+    min-height: 300px;
+    max-height: 400px;
+    flex: 0 0;
+}
+#about p {
+    /* height: 100%; */
+    flex: 1 1 40vw;
+    line-height: 25px;
+    background: none;
+    align-self: center;
 }
 #workcontent {
     margin-top: 20px;
@@ -229,7 +267,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 20vw;
+    min-height: 30vw;
     /* max-width: 700px; */
     /* min-height: 200px; */
     background-color: var(--color_1);
@@ -519,22 +557,30 @@ section {
     height: initial;
 }
 #tetrbtn:hover input:checked ~ #tetritems {
-    /* background-color: var(--hov_col); */
+    background-color: var(--hov_col);
 }
-#tetrtext {
-    display: block;
-}
-#tetrfigbox {
-    display: flex;
+#tetritems {
+    padding: 2%;
+    flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
 }
-#tetrfig1 {
+.tetritems {
+
+}
+#tetr1 {
+    width: 100%;
+}
+#tetr2 {
     width: 300px;
     max-width: 96%;
     margin: 2%;
     /* margin-left: 2%; */
     border-radius: 5px;
+}
+#tetr3 {
+    flex-basis: 70%;
 }
 #collapsebtn3 {
     background-image: url(work/Green\ Square/logo.png);
