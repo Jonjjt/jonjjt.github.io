@@ -202,7 +202,7 @@ section {
     /* max-width: 1000px; */
     width: 90vw;
     padding: 0px 20px;
-    margin: 0px 0px;
+    margin: -10px 0px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -215,7 +215,7 @@ section {
     display: block;
 }
 #about {
-    /* background-color: var(--color_1); */
+    background-color: var(--color_1);
     margin-bottom: 0px;
 }
 #aboutcontent {
@@ -223,23 +223,26 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0.5% 2%;
+    padding: 2% 2%;
 }
-#about h2 {
-    padding: 0px 2%;
-}
-#about img {
+#aboutcontent img {
     height: 30vw;
     min-height: 300px;
     max-height: 400px;
     flex: 0 0;
 }
-#about p {
-    /* height: 100%; */
+#abouttext {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 40vw;
+}
+#abouttext h2 {
+    padding: 0px 2%;
+}
+#abouttext p {
     line-height: 25px;
     background: none;
-    align-self: center;
+    padding: 0px 2%;
 }
 #workcontent {
     margin-top: 20px;
