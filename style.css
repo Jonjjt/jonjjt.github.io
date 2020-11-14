@@ -43,6 +43,9 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: "Roboto", sans-serif;
 }
+p {
+    line-height: 25px;
+}
 header {
     height: 80px;
     top: 0;
@@ -240,6 +243,7 @@ section {
     min-height: 300px;
     max-height: 400px;
     flex: 0 0;
+    border-radius: 50%;
 }
 #abouttext {
     display: flex;
@@ -248,11 +252,12 @@ section {
 }
 #abouttext h2 {
     padding: 0px 2%;
+    margin-bottom: 5px;
 }
 #abouttext p {
-    line-height: 25px;
     background: none;
-    padding: 0px 2%;
+    padding: 0px 4% 0px 2%;
+    margin-top: 0px;
 }
 #workcontent {
     margin-top: 20px;
@@ -364,6 +369,26 @@ section {
     padding: 0px 3%;
     margin: 5px;
 }
+.slideshow {
+    background: var(--color_2);
+    width: 70vw;
+    height: 500vw;
+    max-width: 650px;
+    max-height: 365.625px;
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    justify-content: start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.slideshow div {
+    display: flex;
+}
+.slideshow p {
+    line-height: 18px;
+    width: 200px;
+}
 .slideshow img {
     height: 100%;
     /* width: 56.25%; */
@@ -400,21 +425,8 @@ section {
     display: flex;
     height: initial;
 }
-#exploreslideshow {
-    /* background: pink; */
-    width: 70vw;
-    height: 393.75vw;
-    max-width: 650px;
-    max-height: 365.625px;
-    border-radius: 5px;
-    display: flex;
-    align-self: center;
-    justify-content: start;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
 #exploreslideshow #museumappui {
-    width: unset;
+    width: 30%;
 }
 .youtube {
     min-width: 100%;
@@ -424,6 +436,52 @@ section {
     border: none;
     /* border-radius: 5px; */
     /* align-self: center; */
+}
+#wiexpbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#wiexpbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#wiexpitems {
+    padding: 0px;
+    margin: 0px;
+}
+#wiexpitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#wiexpbtn input:checked ~ #wiexpitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#descexpbtn {
+    min-height: initial;
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#descexpbtn:hover {
+    background-image: url(work/transparent.png);
+}
+#descexpitems {
+    padding: 0px;
+    margin: 0px;
+}
+#descexpitems .collapsetext {
+    background: none;
+    padding: 0px;
+    margin: 0px;
+}
+#descexpbtn input:checked ~ #descexpitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
 }
 #monabtn {
     min-height: initial;
@@ -576,15 +634,15 @@ section {
     background-size: cover;
     color: var(--font_col_1);
     text-shadow: 0px 2px 50% var(--font_col_2);
-    font-weight: 600;
+    /* font-weight: 600; */
     /* -webkit-text-stroke: var(--font_col_2) 0.05rem; */
 }
 #tetrbtn:hover {
     background-position: top;
 }
 #tetrbtn input:checked ~ #tetritems {
-    /* background-image: url(work/transparent.png); */
-    background-color: var(--color_1);
+    background-image: url(work/lesstransparent.png);
+    /* background-color: var(--color_1); */
     visibility: initial;
     display: flex;
     height: initial;
@@ -608,12 +666,14 @@ section {
 #tetr2 {
     width: 300px;
     max-width: 96%;
+    max-height: 650px;
     margin: 2%;
     /* margin-left: 2%; */
     border-radius: 5px;
+    flex: 0 0 20vw;
 }
 #tetr3 {
-    flex-basis: 70%;
+    flex: 1 1 40vw;
 }
 #collapsebtn3 {
     background-image: url(work/Green\ Square/logo.png);
