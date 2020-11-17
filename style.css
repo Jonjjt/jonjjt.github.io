@@ -144,7 +144,8 @@ section {
     align-self: center;
     padding: 0px;
     margin: 0px;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 #about {
     background-color: var(--color_1);
@@ -197,8 +198,7 @@ section {
 .collapsible {
     display: flex;
     width: 100%;
-    /* for 2 items use 49% */
-    flex-basis: 100%;
+    /* flex: 1 1 50%; */
 }
 .collapsebtn {
     display: flex;
@@ -631,7 +631,7 @@ section {
     background-color: var(--color_1);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: normal;
 }
 #grootbtn p {
@@ -773,6 +773,12 @@ section {
     .content {
         width: 100%;
     }
+    .collapsible {
+        flex: 1 1 100%;
+    }
+    .collapsebtn {
+        min-height: 30vw;
+    }
     .slideshow {
         background: var(--color_2);
         width: 80vw;
@@ -787,5 +793,17 @@ section {
     .slideshow p {
         width: 80vw;
         overflow-y: scroll;
+    }
+}
+/* formatting for large screens */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 60vw;
+    }
+    .collapsebtn {
+        min-height: 20vw;
+    }
+    .navbar {
+        width: 65vw;
     }
 }
