@@ -626,6 +626,27 @@ section {
 #gsbtn .collapsetext {
     background-image: url(/work/lesstransparent.png);
 }
+#portalbtn {
+    background-image: url(/work/portal/portfolio_Page_1.png);
+    background-color: rgb(193, 218, 230);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#portalbtn input:checked ~ #portalitems {
+    visibility: initial;
+    display: flex;
+    height: initial;
+}
+#portalitems {
+    margin: 0px;
+    padding: 0px;
+}
+#portalslideshow {
+    width: 100%;
+    min-height: 40vw;
+    max-height: 40vw;
+}
 #grootbtn {
     background-image: url(work/Groot/groot.jpg);
     background-color: var(--color_1);
