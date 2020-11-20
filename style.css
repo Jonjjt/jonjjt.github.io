@@ -647,6 +647,12 @@ section {
     min-height: 40vw;
     max-height: 40vw;
 }
+#portalbtn video {
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
 #grootbtn {
     background-image: url(work/Groot/groot.jpg);
     background-color: var(--color_1);
@@ -819,12 +825,12 @@ section {
 /* formatting for large screens */
 @media only screen and (min-width: 1200px) {
     .container {
-        width: 60vw;
+        width: 70vw;
     }
     .collapsebtn {
         min-height: 20vw;
     }
     .navbar {
-        width: 65vw;
+        width: 75vw;
     }
 }
