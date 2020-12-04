@@ -266,9 +266,9 @@ section {
     height: 0px;
     overflow: hidden;
     transition: height 500ms ease-out;
-    /* visibility: hidden; */
+    visibility: hidden;
     /* display: flex; */
-    display: none;
+    /* display: none; */
     margin-top: 25px;
 }
 .collapsetext {
@@ -345,8 +345,12 @@ section {
     color: var(--font_col_1);
 } */
 #explorebtn input:checked ~ #exploreitems {
+    visibility: initial;
     display: flex;
     height: initial;
+}
+#exploretext {
+    background-image: url(/work/lesstransparent.png);
 }
 #exploreslideshow #museumappui {
     width: 30%;
@@ -359,6 +363,26 @@ section {
     border: none;
     /* border-radius: 5px; */
     /* align-self: center; */
+}
+#explorebtn .dropico {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#explorebtn .collapsebtn input ~ .dropico .svgup, 
+#explorebtn .collapsebtn input:checked ~ .dropico .svgdown {
+    display: none;
+}
+#explorebtn .collapsebtn input ~ .dropico .svgdown, 
+#explorebtn .collapsebtn input:checked ~ .dropico .svgup {
+    display: initial;
+}
+#explorebtn .collapsebtn svg {
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 1rem;
+    height: 1rem;
+    stroke: var(--font_col_1);
 }
 #wiexpbtn {
     min-height: initial;
@@ -566,6 +590,7 @@ section {
 #tetrbtn input:checked ~ #tetritems {
     background-image: url(work/lesstransparent.png);
     /* background-color: var(--color_1); */
+    visibility: initial;
     display: flex;
     height: initial;
 }
@@ -618,6 +643,7 @@ section {
     outline: none;
 }
 #gsbtn input:checked ~ #gsitems {
+    visibility: initial;
     display: flex;
     height: initial;
 }
@@ -635,6 +661,7 @@ section {
     background-position-y: 20px;
 }
 #portalbtn input:checked ~ #portalitems {
+    visibility: initial;
     display: flex;
     height: initial;
 }
@@ -665,6 +692,7 @@ section {
     background-color: var(--hov_col);
 }
 #dayshapesbtn input:checked ~ #dayshapesitems {
+    visibility: initial;
     display: flex;
     height: initial;
 }
@@ -700,6 +728,7 @@ section {
     width: 100%;
 }
 #grootbtn input:checked ~ #grootitems {
+    visibility: initial;
     display: flex;
     height: initial;
 }
@@ -720,6 +749,7 @@ section {
     background-color: white;
 }
 #legobtn input:checked ~ #legoitems {
+    visibility: initial;
     display: flex;
     height: initial;
 }
