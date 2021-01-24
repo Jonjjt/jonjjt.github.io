@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Tang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="/Icons/logo.ico?" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img id="navlogo" src="/Icons/logo.png" alt=""></a>
+        <svg class="menubtn" id="menubtnnav" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+                <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+                <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+            </g>
+        </svg>
+    </div>
+    <div id="dim" onclick="closeNav()">
+    </div>
+    <div id="sidenav">
+        <a href="index.html">About&nbsp;&nbsp;&nbsp;</a>
+        <a href="projects.html">Projects&nbsp;&nbsp;&nbsp;</a>
+        <a href="mailto:jjt618@ic.ac.uk" class="btn">Contact&nbsp;&nbsp;&nbsp;</a>
+        <a href="JonathanTang_CV.pdf" class="btn" target="_blank">CV&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <svg class="menubtn" id="menubtn2" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+            <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+            <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+        </g>
+    </svg>
+    <svg id="sttbtn" onclick="scrolltoTop()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.21 158.56">
+        <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+            <polyline class="cls-1" points="168.21 79.28 91.6 15 15 79.28"/>
+            <polyline class="cls-1" points="168.21 143.56 91.6 79.28 15 143.56"/>
+        </g></g>
+    </svg>
+    <div class="main">
+        <div class="projectpage" id="portalpage">
+            <h1>Portal</h1>
+            <p>
+                This project was an open ended brief in which we were meant to create a meaningful human interaction.
+            </p>
+            <p class="disclaimer">*This project was done in collaboration with Brandon Tan</p>
+            <h3>My Work on the Project</h3>
+            <p>
+                As this was a 2 person project, my partner and I worked together on most aspects of this project.
+                These include ideation, concept development, arduino code and implementation with the electronics, and chassis design and construction. 
+                Nearer to the end of the project I worked on graphics and presentation materials while my partner continued work on the arduino code and electronics.
+            </p>
+            <div class="lightbox">
+                <h2>Project Video</h2>
+                <video controls>
+                    <source src="/work/portal/Portal_Trim.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="lightbox">
+                <h2>Project Boards</h2>
+                <img src="/work/portal/portfolio_Page_2.png" alt="">
+                <img src="/work/portal/portfolio_Page_3.png" alt="">
+                <img src="/work/portal/portfolio_Page_4.png" alt="">
+                <img src="/work/portal/portfolio_Page_5.png" alt="">
+            </div>
+            <div class="lightbox">
+                <h2>Images</h2>
+                <div class="images">
+                    <div class="oth_images">
+                        <a href="/work/portal/cad render.JPG" target="_blank"><img src="/work/portal/cad render.JPG" alt=""></a>
+                        <a href="/work/portal/IMG_3932.JPG" target="_blank"><img src="/work/portal/IMG_3932.JPG" alt=""></a>
+                        <a href="/work/portal/Start Simulating.png" target="_blank"><img src="/work/portal/Start Simulating.png" alt=""></a>
+                        <a href="/work/portal/wip.jpeg" target="_blank"><img src="/work/portal/wip.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html">Return to Projects</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Tang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="/Icons/logo.ico?" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img id="navlogo" src="/Icons/logo.png" alt=""></a>
+        <svg class="menubtn" id="menubtnnav" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+                <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+                <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+            </g>
+        </svg>
+    </div>
+    <div id="dim" onclick="closeNav()">
+    </div>
+    <div id="sidenav">
+        <a href="index.html">About&nbsp;&nbsp;&nbsp;</a>
+        <a href="projects.html">Projects&nbsp;&nbsp;&nbsp;</a>
+        <a href="mailto:jjt618@ic.ac.uk" class="btn">Contact&nbsp;&nbsp;&nbsp;</a>
+        <a href="JonathanTang_CV.pdf" class="btn" target="_blank">CV&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <svg class="menubtn" id="menubtn2" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+            <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+            <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+        </g>
+    </svg>
+    <svg id="sttbtn" onclick="scrolltoTop()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.21 158.56">
+        <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+            <polyline class="cls-1" points="168.21 79.28 91.6 15 15 79.28"/>
+            <polyline class="cls-1" points="168.21 143.56 91.6 79.28 15 143.56"/>
+        </g></g>
+    </svg>
+    <div class="main">
+        <div class="projectpage" id="tetrilingpage">
+            <h1 id="tetr_title">Tetriling Puzzle Algorithm Design</h1>
+            <p>
+                The project was to design an algorithm in Python that would fill as much of a generated polyomino region as fast as possible with the fewest erroneous tiles using tetris pieces.
+                The possible pieces (as seen in figure 1) used to generate the region are the same as the possible pieces to solve the puzzle. <br>
+                The algorithm would be assessed by accuracy - where one missing tile and one excess tile is worth the same amount, and how fast the algorithm completed its task. <br>
+                Afterwards I also wrote a recursive backtracking algorithm to fill 100% of the polyomino region with no erroneous tiles using valid tetris pieces. However, this method was very slow and was not scalable.
+            </p>
+            <div class="images">
+                <p>
+                    <b>100x100 Region</b> <br>
+                    <b>Time performance</b> <br>
+                    The running time was 0.82516 seconds. <br>                                    
+                    <b>Accuracy</b> <br>
+                    All pieces are labelled with correct shapeID and pieceID. <br>
+                    No forbidden pieces are used. <br>
+                    The number of blocks in the TARGET is 7000. <br>
+                    The number of blocks in the SOLUTION is 6676. <br>
+                    There are 324 MISSING blocks (4.6286%) and 0 EXCESS blocks (0.0000%).
+                </p>
+                <a href="/work/Tetriling Puzzle/100x100.png"><img src="/work/Tetriling Puzzle/100x100.png" alt="" id="hero"></a>        
+            </div>
+            <h2>The Anatomy of the Puzzle</h2>
+            <div id="tetr_anat">
+                <a href="/work/Tetriling Puzzle/figure1c.png"><img src="/work/Tetriling Puzzle/figure1c.png" alt="" id="fig1"></a>
+                <p>
+                    In order to test the solution algorithm, ideally there should be a new generated polyomino space for each test.
+                    For this, we were provided with a script that not only generated a new polyomino region with adjustable parameters, but also tracked the running time of the algorithm.
+                    The region is generated as a matrix with (width) columns, and (height) rows, with 1s representing filled tiles, and 0s representing empty tiles.
+                    The solution should be a matrix of the same rows and columns, but with tuples at each point, with the first number representing the shapeID of the piece placed (see figure 1), and the second representing the order in which the pieces were placed.
+                </p>
+            </div>
+            <h2>Corner Pieces</h2>
+            <p>
+                Like a regular puzzle, the best place to start is probably at a corner, where there are the fewest possible fitting pieces. <br>
+                What does this mean? In the case of the puzzle, the corner pieces have the fewest neighbouring pieces.
+                Applying this logic to the tetriling puzzle, the tiles with the fewest possible fitting tetris pieces will have the fewest neighbouring tiles.
+            </p>
+            <h2>The Anatomy of my Solution</h2>
+            <p>
+                The algorithm is written as a function, taking the target matrix of the genreated polyomino region as an input.
+                Within this function, I created the functions neighbour_count, check_piece_validity, check_piece_score, update_neighbour, and place_piece.
+                When the solution function is run, the dimensions of the target are parsed and an empty solution matrix of the same size is created. 
+                Afterwards, neighbour_count is called and generates a matrix of the same dimensions as the target, in which all occupied tiles (the 1s) are replaced with a number representing the neighbour count of that tile.
+                Then, check_piece_validity generates a list of valid pieces for the first occupied tile, check_piece_score ranks the pieces by the sum of the neighbour count of the tiles they occupy, place_piece inserts the piece into the solution matrix, and update_neighbour updates the neighbour count of all neighbouring tiles of the placed piece.
+                This process is repeated in a loop for each tile, until there are none left.
+                You can find my code for this and my backtracking algorithm <a href="https://github.com/Jonjjt/Tetriling-Puzzle-Algorithm" target="_blank">here</a>.
+            </p>
+            <div class="images">
+                <div>
+                    <p>
+                        <b>10x10 Region - Backtracking</b> <br>
+                        <b>Time performance</b> <br>
+                        The running time was 0.02080 seconds. <br>                                    
+                        <b>Accuracy</b> <br>
+                        All pieces are labelled with correct shapeID and pieceID. <br>
+                        No forbidden pieces are used. <br>
+                        The number of blocks in the TARGET is 68. <br>
+                        The number of blocks in the SOLUTION is 68. <br>
+                        There are 0 MISSING blocks (0.0000%) and 0 EXCESS blocks (0.0000%).
+                    </p>
+                    <img src="/work/Tetriling Puzzle/10x10bt.png" alt="" id="hero">
+                </div>
+                <div>
+                    <p>
+                        An interesting point to note is that the pieces used to generate the region isn't always exactly the same as the 100% filled solution.
+                    </p>
+                    <img src="/work/Tetriling Puzzle/10x10btp.png" alt="" id="hero">
+                </div>
+            </div>
+        </div>
+        <a href="projects.html">Return to Projects</a>
+    </div>
+</body>
+</html>

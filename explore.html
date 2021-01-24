@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Tang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="/Icons/logo.ico?" type="image/x-icon">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img id="navlogo" src="/Icons/logo.png" alt=""></a>
+        <svg class="menubtn" id="menubtnnav" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+            <g id="Layer_1-2" data-name="Layer 1">
+                <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+                <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+                <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+            </g>
+        </svg>
+    </div>
+    <div id="dim" onclick="closeNav()">
+    </div>
+    <div id="sidenav">
+        <a href="index.html">About&nbsp;&nbsp;&nbsp;</a>
+        <a href="projects.html">Projects&nbsp;&nbsp;&nbsp;</a>
+        <a href="mailto:jjt618@ic.ac.uk" class="btn">Contact&nbsp;&nbsp;&nbsp;</a>
+        <a href="JonathanTang_CV.pdf" class="btn" target="_blank">CV&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <svg class="menubtn" id="menubtn2" onclick="togNav()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <line class="cls-1" x1="15" y1="15" x2="135" y2="15"/>
+            <line class="cls-1" x1="15" y1="65" x2="135" y2="65"/>
+            <line class="cls-1" x1="15" y1="115" x2="135" y2="115"/>
+        </g>
+    </svg>
+    <svg id="sttbtn" onclick="scrolltoTop()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.21 158.56">
+        <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+            <polyline class="cls-1" points="168.21 79.28 91.6 15 15 79.28"/>
+            <polyline class="cls-1" points="168.21 143.56 91.6 79.28 15 143.56"/>
+        </g></g>
+    </svg>
+    <div class="main">
+        <div class="projectpage" id="explorepage">
+            <div class="lightbox" id="canegif">
+                <img src="/work/EDP/cane.gif" alt="">
+            </div>
+            <h1>Connect: Explore</h1>
+            <p>
+            Explore is a device and system to create an independent museum experience for visually impaired visitors.
+            </p>
+            <p class="disclaimer">*This was a group project done with <a href="https://oscar-jones.com/" target="_blank">Oscar Jones</a>, <a href="https://anaisengelmann.com/" target="_blank">Anais Engelmann</a>, and Kanya Thavaensan. <br>
+                *Google was not involved with the project in any way, and any use of the Google brand is for academic purposes only. <br>
+                This project was one of fourteen expert picks in the <a href="https://www.londondesignbiennale.com/team-connectexplore" target="_blank">London Design Bienalle</a> with 500 entries. 
+            </p>
+            <div class="lightbox">
+                <h2>Project Video</h2>
+                <iframe class="youtube" allowfullscreen="true" src="https://www.youtube.com/embed/BGxrWEJgCog"></iframe>
+            </div>
+            <h2>My Work on the Project</h2>
+            <h4>Research and Development</h4>
+            <p>
+                Over the course of the 6 month project, I worked on needfinding, competitor market analysis, ideation, interviewed Mona Minkara, and researched opportunity areas in museums and galleries.
+            </p>
+            <h4>Concept Development (Unused)</h4>
+            <p>
+                During the ideation phase of the project, I worked on a conceptual handheld device to aid VI users while grocery shopping. 
+                This included prototyping, and early stage systems design. 
+                Elements such as being store owned with store built infrastructure were carried over to Explore.
+            </p>
+            <div class="images">
+                <a href="/work/EDP/rnd_phase2_page_1.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_1.png" alt="" id="hero"></a>
+                <div class="oth_images">
+                    <a href="/work/EDP/rnd_phase2_page_2.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_2.png" alt=""></a>
+                    <a href="/work/EDP/rnd_phase2_page_3.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_3.png" alt=""></a>
+                    <a href="/work/EDP/rnd_phase2_page_4.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_4.png" alt=""></a>
+                    <a href="/work/EDP/rnd_phase2_page_5.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_5.png" alt=""></a>
+                    <a href="/work/EDP/rnd_phase2_page_6.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_6.png" alt=""></a>
+                    <a href="/work/EDP/rnd_phase2_page_7.png" target="_blank"><img src="/work/EDP/rnd_phase2_page_7.png" alt=""></a>
+                </div>
+            </div>
+            <h4>Product Compliance Research</h4>
+            <p>
+                While developing Explore, I was in charge of reading through what was required by EU and UK Legislation (pre-Brexit), and making sure our product complied. <br>
+                This involved referencing BSI and ISO standards and standards Google has used in their Declaration of Conformity for other products, and making amendments to our design. <br>
+                By extension, I did the content on the packaging renders and the labels on the device.
+            </p>
+            <div class="images">
+                <div class="oth_images" id="compliance">
+                    <a href="/work/EDP/slide1 v2.png" target="_blank"><img src="/work/EDP/slide1 v2.png" alt=""></a>
+                    <a href="/work/EDP/slide2 v2.png" target="_blank"><img src="/work/EDP/slide2 v2.png" alt=""></a>
+                    <a href="/work/EDP/slide3 v2.png" target="_blank"><img src="/work/EDP/slide3 v2.png" alt=""></a>
+                    <a href="/work/EDP/slide4 v2.png" target="_blank"><img src="/work/EDP/slide4 v2.png" alt=""></a>
+                </div>
+            </div>
+            <h4>Miscillaneous</h4>
+            <p>
+                I did the video voiceover, and worked on the conceptual app UI/UX design. 
+            </p>
+            <h2>The Project</h2>
+            <p>
+            This project's focal point was designing a hand-held and battery powered tool that not only serves the mass market but also serves the needs of an underserved group. <br>
+            We were also required to choose a parent brand that would theoretically be able to expand into our market of interest. We chose Google, and proposed the product line Connect, alongside their existing Nest and Pixel products.
+            </p>
+            <div class="images">
+                <a href="/work/EDP/phase3_36.png" target="_blank"><img src="/work/EDP/phase3_36.png" alt="" id="hero"></a>
+                <div class="oth_images">
+                    <a href="/work/EDP/phase3_37.png" target="_blank"><img src="/work/EDP/phase3_37.png" alt=""></a>
+                    <a href="/work/EDP/phase3_34.png" target="_blank"><img src="/work/EDP/phase3_34.png" alt=""></a>
+                    <a href="/work/EDP/phase3_33.png" target="_blank"><img src="/work/EDP/phase3_33.png" alt=""></a>
+                    <a href="/work/EDP/phase3_30.png" target="_blank"><img src="/work/EDP/phase3_30.png" alt=""></a>
+                    <a href="/work/EDP/phase3_31.png" target="_blank"><img src="/work/EDP/phase3_31.png" alt=""></a>
+                </div>
+            </div>
+            <h2>Dr. Mona Minkara</h2>
+            <p>
+            <a href="https://monaminkara.com" target="_blank">Dr. Mona Minkara</a> is a visually impaired professor of Bioengineering at Northeastern University in Massechusetts.
+            With <a href="https://www.youtube.com/channel/UCUAGEcdoYLOD7x5hTDKmVoA" target="_blank">Planes Trains and Canes</a>, she documents her experiences solo-travelling as a visually impaired person to share the day to day issues visually impaired (VI) people face.<br>
+            We met with Mona over skype twice over the course of this project, and kept in touch via email throughout our design process.
+            </p>
+            <h2>An Exclusive Society</h2>
+            <p>
+            During our research we found that most things just inherently aren't designed for a visually impaired person.
+            Many everyday objects require or are heavily reliant on visual cues to function, and the current solution - make products specifically for the visually impaired.
+            However, these products are very expensive and don't solve the inherent issue of non-inclusive design.
+            </p>
+            <h2>VI Independence</h2>
+            <p>
+            Currently, under the Equality Act 2010 things such as company policies and shop layouts should accommodate a disabled person, and in the case of a VI person, information should be available in accessible formats such as braille, large print, or email.<a href="https://www.rnib.org.uk/services-we-offer-advice-professionals/equality-act-compliance" style="font-size: 10px;">1</a> <br>
+            This is all good, but from watching <a href="https://www.youtube.com/channel/UCwf9TcLyS5KDoLRLjke41Hg" target="_blank">Molly Burke</a> and Mona's documentaries, we found that VI users still required assistance from employees to navigate or to find specific items.
+            In a voice chat with Mona, she told us she preferred grocery shopping online, because otherwise she would need to phone ahead and make sure someone was available to assist her.
+            </p>
+            <h2>Tactile Paving</h2>
+            <p>
+            We found that public transit areas in places like Hong Kong, Singapore and Japan use tactile paving and audio cues to help VI persons navigate independently.
+            However, many other indoor locations do not. 
+            To find out why, we spoke with <a href="https://www.wongouyang.com/the-team/subheader/danny-t-y-tang/" target="_blank">Danny Tang</a>, who said limitations of indoor tactile strips include aesthetic undesirability for designers and building owners, they often follow unintuitive pathways, and can be tripping hazards to the ambulatory impaired.<br>
+            As well as these things, we found that cafes or restaurants and places like museums and galleries with ever-changing layouts would struggle to adopt a permanent solution like tactile paving.
+            </p>
+            <h2>Explore</h2>
+            <p>
+            In order to combat the problems we discovered during our research, we came up with a 3 part system. <br>
+            This system is marketed to museums (and possibly expanding to other indoor locations), and helps museums create a fluid independent experience for VI visitors outside of special VI tours.
+                <ul>
+                    <li>
+                    BLE (bluetooth low energy) Beacons are placed throughout the museum for indoor positioning information that is fed to the visitor's smartphone. 
+                    </li>
+                    <li>
+                    Upon entry, the VI visitor is given a two-part cane attachment that pairs with the smartphone and detects our "invisible tactile paving" that is laid out in the museum.
+                    </li>
+                    <li>
+                    The "invisible tactile paving" is easy to place down and easy to remove for the museum for quick layout changes.
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <a href="projects.html">Return to Projects</a>
+    </div>
+</body>
+</html>
