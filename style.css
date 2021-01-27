@@ -119,6 +119,7 @@ html, body{
     z-index: 1;
 }
 .main {
+    max-width: 3840px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -199,6 +200,19 @@ html, body{
 #day_shapes img {
     height: 100%;
 }
+#this_site {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#this_site img {
+    padding: 70px;
+}
+#misc_projects img {
+    position: relative;
+    height: 100%;
+    left: -60px;
+}
 /* Project Page (General) */
 .projectpage {
     width: 70%;
@@ -209,11 +223,15 @@ html, body{
     align-content: center;
 }
 .projectpage ~ a {
+    /* position: fixed; */
     text-decoration: none;
     text-align: center;
     color: initial;
     font-size: 24px;
     font-weight: bold;
+    /* top: -13px; */
+    /* left: 70px; */
+    /* z-index: 4; */
     margin: 30px;
     padding: 20px;
     background-color: var(--color_1);
@@ -358,4 +376,13 @@ p a {
 #dayshapespage .lightbox > img {
     width: 100%;
     outline: none;
+}
+/* This Site Page */
+#thissitepage img {
+    max-width: 100%;
+}
+/* misc page */
+#miscpage .lightbox .images,
+#miscpage .lightbox .images .oth_images {
+    width: initial;
 }
