@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f364c3ef.css",
-    "main.js": "/static/js/main.d34060f0.js",
+    "main.js": "/static/js/main.f7995e8a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/0001_2.gif": "/static/media/0001_2.0db7b17139d1dba0e3f4.gif",
     "static/media/Gameplay3.mp4": "/static/media/Gameplay3.a7a6d5299e4884cb5fab.mp4",
@@ -88,7 +88,7 @@
     "static/media/portfolio_Page_5.png": "/static/media/portfolio_Page_5.1ef098306581db4effb4.png",
     "static/media/Final Portfolio Compilation_Page_17.png": "/static/media/Final Portfolio Compilation_Page_17.8780227ec4c0f6831e21.png",
     "static/media/WhatsApp Image 2018-04-18 at 5.44.17 PM.jpeg": "/static/media/WhatsApp Image 2018-04-18 at 5.44.17 PM.80d02473a418bfc708f5.jpeg",
-    "static/media/JonathanTang_CV.pdf": "/static/media/JonathanTang_CV.1bdce8f796877761aead.pdf",
+    "static/media/JonathanTang_CV.pdf": "/static/media/JonathanTang_CV.c71beb89ec97b119ad0b.pdf",
     "static/media/TANG_Jonathan_Page_09.png": "/static/media/TANG_Jonathan_Page_09.dc0cc606bfefd58e7885.png",
     "static/media/portfolio_Page_3.png": "/static/media/portfolio_Page_3.98f3e08c263c7c3503d7.png",
     "static/media/Slide26.PNG": "/static/media/Slide26.ced71ad7e5962de35ae7.PNG",
@@ -114,11 +114,11 @@
     "static/media/logo.png": "/static/media/logo.1eec7b3d215d16c3b6dd.png",
     "index.html": "/index.html",
     "main.f364c3ef.css.map": "/static/css/main.f364c3ef.css.map",
-    "main.d34060f0.js.map": "/static/js/main.d34060f0.js.map",
+    "main.f7995e8a.js.map": "/static/js/main.f7995e8a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f364c3ef.css",
-    "static/js/main.d34060f0.js"
+    "static/js/main.f7995e8a.js"
   ]
 }
